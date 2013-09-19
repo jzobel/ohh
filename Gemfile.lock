@@ -1,4 +1,16 @@
+GIT
+  remote: https://github.com/mblumtritt/injixo-rails
+  revision: 739a3fe367e3f52aad59edef16b7dd6ebf7b7a33
+  specs:
+    injixo-rails (4.4.3)
+      bootstrap-sass
+      cortex-rails (>= 5.1.0)
+      haml-rails
+      rails
+      sass-rails
+
 GEM
+  remote: http://gems.injixo.com/
   remote: https://rubygems.org/
   specs:
     actionmailer (4.0.0)
@@ -27,6 +39,8 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.0)
     atomic (1.1.14)
+    bootstrap-sass (2.3.2.2)
+      sass (~> 3.2)
     builder (3.1.4)
     coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
@@ -35,8 +49,27 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.3)
+    cortex-rails (6.0.0)
+      activemodel
+      activesupport
+      faraday
+      faraday_middleware
+      hashie
+      multi_json
     erubis (2.7.0)
     execjs (2.0.1)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
+    faraday_middleware (0.9.0)
+      faraday (>= 0.7.4, < 0.9)
+    haml (4.0.3)
+      tilt
+    haml-rails (0.4)
+      actionpack (>= 3.1, < 4.1)
+      activesupport (>= 3.1, < 4.1)
+      haml (>= 3.1, < 4.1)
+      railties (>= 3.1, < 4.1)
+    hashie (2.0.5)
     hike (1.2.3)
     i18n (0.6.5)
     jbuilder (1.5.1)
@@ -52,6 +85,7 @@ GEM
     mime-types (1.25)
     minitest (4.7.5)
     multi_json (1.8.0)
+    multipart-post (1.2.0)
     polyglot (0.3.3)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -109,6 +143,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+  injixo-rails!
   jbuilder (~> 1.2)
   jquery-rails
   rails (= 4.0.0)
