@@ -1,0 +1,13 @@
+development:
+    endpoint: http://cortex.injixo.dev/
+    client_id: ohh
+    client_secret: injixo
+test:
+    endpoint: http://cortex.injixo.dev/
+    client_id: ohh
+    client_secret: injixo
+    
+production:
+    endpoint: http://cortex.injixo.dev/
+    client_id: ohh
+    client_secret: injixo
