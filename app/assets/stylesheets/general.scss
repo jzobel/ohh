@@ -1,0 +1,109 @@
+h1.light{
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 40px;
+    border-bottom: 1px solid #e5e5e5;
+    margin: 0 0 20px 0;
+    small{
+        font-size: 15px;
+        color: #99999;
+    }
+}
+
+th a.sorted_asc:after {
+    font-family: 'FontAwesome';
+    content: "  \f0de";
+}
+
+th a.sorted_desc:after {
+    font-family: 'FontAwesome';
+    content: "  \f0dd";
+}
+
+.cancel_link{
+    margin: 0 15px;
+}
+
+.linebreak{
+    word-break: break-all;
+}
+
+.popover-content{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.grey{
+    color: #bbb;
+    font-size: 0.8em;
+}
+.grey:hover{
+    color: #666;
+    text-decoration: none;
+}
+
+.modal{
+    form{
+        margin-bottom: 0;
+    }
+}
+
+.index-search{
+    margin-left: 25px;
+}
+
+.section{
+    margin-top: 15px;
+    &.important{
+        background: #f6f6f6;
+        padding: 1px 15px 15px 15px;
+        margin-bottom: 20px;
+    }
+    &.boxed{
+        background: white;
+        box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.1) ;
+    }
+}
+
+.section-header {
+  padding: 5px 10px;
+  border-bottom: 1px solid #D2D2D2;
+  h7 {
+    padding-left: 5px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+}
+
+.current_subscription{
+    padding: 20px;
+    .service{
+        margin-bottom: 0px;
+        .logo{
+            line-height: 30px;
+        }
+        .extension{
+            font-size: 22px;
+            line-height: 26px;
+            vertical-align: bottom;
+            text-transform: uppercase;
+            color: #B4B4B4;
+            display: inline;
+            padding-left: 4px;
+        }
+    }
+    .seperator{
+        margin: 2em;
+    }
+    .emphasize{
+        font-size: 1.4em;
+    }
+    table{
+        margin-top: 15px;
+        margin-bottom: 0px;
+        td.number{
+            width: 120px;
+            text-align: right;
+        }
+    }
+}

@@ -1,12 +1,16 @@
-%p= link_to "a broken link", '/does_not_exist'
-%p= link_to "Bang", '/error'
-%h2 How to enable custom error handlers in your injixo-rails app
-%ul
-    %li
-        Add following line to your application.rb
-        %pre config.exceptions_app= self.routes
-    %li
-        Add these lines to your route.rb
-        %pre
-            match '/404', to: 'application#not_found', via: :all
-            match '/500', to: 'application#internal_error', via: :all
+.row
+    .span9
+        %h1.light Two steps to enable the error handlers in your injixo-rails app
+        %ol
+            %li
+                %p Add following line to your application.rb
+                %pre config.exceptions_app= self.routes
+            %li
+                %p Add these lines to your route.rb
+                %pre= "match '/404', to: 'application#not_found', via: :all\nmatch '/500', to: 'application#internal_error', via: :all"
+    .span3
+        %h1.light Ohh - Samples
+        %p Here we have tow prepared samples to raise errors:
+        .btn-group
+            .btn= link_to "Not Found", '/does_not_exist'
+            .btn= link_to "Internal Error", '/error'
