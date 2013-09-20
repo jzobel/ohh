@@ -5,8 +5,8 @@ class ErrorsController < ApplicationController
     render
   end
   
-  def error
-    raise "Bang"
+  def bam
+    raise 'Bam!'
   end
 
 end
