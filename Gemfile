@@ -1,8 +1,9 @@
 source 'http://gems.injixo.com'
 source 'https://rubygems.org'
 
-
-gem 'injixo-rails', git: 'https://github.com/mblumtritt/injixo-rails'
+# TODO: change next lines!
+#gem 'injixo-rails', git: 'https://github.com/mblumtritt/injixo-rails'
+gem 'injixo-rails', path: '../injixo-rails/'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

@@ -4,4 +4,8 @@ Ohh::Application.routes.draw do
   
   get '/errors' => 'errors#index'
   get '/error' => 'errors#error'
+  
+  match '/404', to: 'application#not_found', via: :all
+  match '/500', to: 'application#internal_error', via: :all
+  
 end

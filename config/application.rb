@@ -64,6 +64,8 @@ module Ohh
     # Define the available I18n locales that are loaded on start up
     config.i18n.available_locales = [:en, :'en-GB', :de, :fr, :es, :nl, :it, :'sv']
     
+    config.exceptions_app= self.routes
+    
     # necessary since Rails4
     config.secret_key_base = 'butter bei die fische'
   end

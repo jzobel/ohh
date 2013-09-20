@@ -1,2 +1,12 @@
-%p= link_to "a broken link", '/404'
+%p= link_to "a broken link", '/does_not_exist'
 %p= link_to "Bang", '/error'
+%h2 How to enable custom error handlers in your injixo-rails app
+%ul
+    %li
+        Add following line to your application.rb
+        %pre config.exceptions_app= self.routes
+    %li
+        Add these lines to your route.rb
+        %pre
+            match '/404', to: 'application#not_found', via: :all
+            match '/500', to: 'application#internal_error', via: :all

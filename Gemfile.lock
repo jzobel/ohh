@@ -1,6 +1,5 @@
-GIT
-  remote: https://github.com/mblumtritt/injixo-rails
-  revision: 739a3fe367e3f52aad59edef16b7dd6ebf7b7a33
+PATH
+  remote: ../injixo-rails/
   specs:
     injixo-rails (4.4.3)
       bootstrap-sass
