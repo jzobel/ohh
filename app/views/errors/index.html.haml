@@ -3,14 +3,14 @@
         %h1.light Two steps to enable the error handlers in your injixo-rails app
         %ol
             %li
-                %p Add following line to your application.rb
+                %p Add following line to your config/application.rb
                 %pre config.exceptions_app= self.routes
             %li
-                %p Add these lines to your route.rb
+                %p Add these lines to your config/route.rb
                 %pre= "match '/404', to: 'application#not_found', via: :all\nmatch '/500', to: 'application#internal_error', via: :all"
     .span3
         %h1.light Ohh - Samples
-        %p Here we have tow prepared samples to raise errors:
+        %p Here we have two prepared samples to raise errors:
         .btn-group
             .btn= link_to "Not Found", '/does_not_exist'
             .btn= link_to "Internal Error", '/bam'
